@@ -126,7 +126,7 @@ first_name = st.text_input("First Name")
 last_name = st.text_input("Last Name")
 birthdate = st.date_input("Birthdate", datetime.date(1990, 1, 1))
 gender = st.radio("Gender", ['M', 'F'])
-ssn = st.text_input("SSN (for Georgia)", placeholder="123-45-6789")
+ssn = st.text_input("SSN, placeholder="123-45-6789")
 
 if st.button("Generate DL Number"):
     dl_number = generate_dl(selected_state, last_name, birthdate, gender, ssn)
